@@ -23,12 +23,13 @@
             align-items: center;
         }
         video {
+            pointer-events: none;
             width: 100%;
             height: auto;
         }
     </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
 
     <div id="video-container">
         <video id="video" autoplay muted>
