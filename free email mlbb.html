@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+        #video-container {
+            width: 120%;
+            height: auto;
+            max-width: 100%;
+            margin: 10px auto
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="video-container">
+        <video id="video" autoplay muted>
+            <source src="an.mp4" type="video/mp4">
+            Browser Anda tidak mendukung elemen video.
+        </video>
+    </div>
+
+    <script>
+        const video = document.getElementById('video');
+        video.onended = function() {
+            window.location.href = 'index.html'; // Ganti dengan URL tujuan Anda
+        };
+    </script>
+
+</body>
+</html>
