@@ -2,6 +2,8 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+     <meta name="theme-color" content="#444">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loading</title>
     <style>
@@ -20,12 +22,12 @@
             color: #333;
         }
         .spinner {
-            border: 8px solid #f3f3f3; /* Light gray background */
-            border-top: 8px solid #3498db; /* Blue spinner color */
+            border: 7px solid #f3f3f3; /* Light gray background */
+            border-top: 7px solid #3498db; /* Blue spinner color */
             border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            animation: spin 1.5s linear infinite;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
@@ -36,12 +38,12 @@
 <body>
 
     <div class="spinner"></div>
-
+    
     <script>
-        // Setelah 7 detik, arahkan ke URL baru
+        
         setTimeout(function() {
-            window.location.href = "claim.html";  // Ganti dengan URL tujuanmu
-        }, 4000); // 7 detik (7000 milidetik)
+            window.location.href = "claim.html";
+        }, 10000);
     </script>
 
 </body>
